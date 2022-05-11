@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'custom_drawer.dart';
 import 'educational_history.dart';
-import 'about_me.dart';
 import 'hire_me.dart';
 import 'work_experiences.dart';
-import 'contact_me.dart';
+import 'my_profile.dart';
 import 'login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -28,30 +27,11 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ContactMe(),
+                    builder: (context) => MyProfile(),
                   ),
                 );
               },
-              child: Text('Contact Me'),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(200, 50),
-                primary: Colors.white60,
-                shape: BeveledRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-            ),
-            SizedBox(height: 20.0),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => AboutMe(),
-                  ),
-                );
-              },
-              child: Text('About Me'),
+              child: Text('My Profile'),
               style: ElevatedButton.styleFrom(
                 fixedSize: Size(200, 50),
                 primary: Colors.white60,

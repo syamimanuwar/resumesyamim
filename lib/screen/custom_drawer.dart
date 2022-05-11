@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'about_me.dart';
 import 'educational_history.dart';
 import 'hire_me.dart';
 import 'home_screen.dart';
 import 'work_experiences.dart';
-import 'contact_me.dart';
+import 'my_profile.dart';
 
 class CustomDrawer extends StatelessWidget {
   _buildDrawerOption(Icon icon, String title, Function()? onTap) {
@@ -89,19 +88,10 @@ class CustomDrawer extends StatelessWidget {
           ),
           _buildDrawerOption(
             Icon(Icons.dashboard),
-            'Contact Me',
+            'My Profile',
             () => Navigator.of(context).pushReplacement(
               MaterialPageRoute(
-                builder: (context) => ContactMe(),
-              ),
-            ),
-          ),
-          _buildDrawerOption(
-            Icon(Icons.dashboard),
-            'About Me',
-            () => Navigator.of(context).pushReplacement(
-              MaterialPageRoute(
-                builder: (context) => AboutMe(),
+                builder: (context) => MyProfile(),
               ),
             ),
           ),
