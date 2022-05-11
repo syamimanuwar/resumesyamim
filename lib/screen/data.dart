@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'work_screen.dart';
-
 class EducationalType {
   final String image;
   final String name;
@@ -33,7 +30,7 @@ final List<EducationalType> EducationType = [
 
 final _EducationalType1 = EducationalType(
   image: 'images/uitm.png',
-  name: 'UiTM Seremban 3',
+  name: 'UITM SEREMBAN 3',
   course: 'Bachelor Degree of Corporate Administration (Hons)',
   year: '2016 - 2019',
   cgpa: 'CGPA: 3.19',
@@ -41,7 +38,7 @@ final _EducationalType1 = EducationalType(
 
 final _EducationalType2 = EducationalType(
   image: 'images/uitm.png',
-  name: 'UiTM Dengkil',
+  name: 'UITM DENGKIL',
   course: 'Foundation of Law',
   year: '2015 - 2016',
   cgpa: '2.90',
@@ -50,7 +47,7 @@ final _EducationalType2 = EducationalType(
 
 final _EducationalType3 = EducationalType(
   image: 'images/smj.png',
-  name: 'Sekolah Menengah Kebangsaan Jitra',
+  name: 'SEKOLAH MENENGAH KEBANGSAAN JITRA',
   year: '2010 - 2014',
   pmr: 'PMR: 8A',
   spm: 'SPM: 6A 2B 2C',
@@ -79,17 +76,97 @@ final List<WorkType> workType = [
 
 final _WorkType1 = WorkType(
   image: 'images/tmf.png',
-  name: 'TMF Administrative Services Malaysia Sdn. Bhd.',
+  name: 'TMF ADMINISTRATIVE SERVICES MALAYSIA SDN BHD',
   position: 'Associate Corporate Secretary',
   year: 'Oct 2019 - March 2022',
 );
 
 final _WorkType2 = WorkType(
-  image: 'images/wordpress.png',
-  name: 'Freelance - Wordpress Developer',
-);
+    image: 'images/wordpress.png',
+    name: 'FREELANCE',
+    position: 'Wordpress Developer');
 
 final _WorkType3 = WorkType(
   image: 'images/laptop.jpeg',
-  name: 'Freelance - Laptop / PC Technician',
+  name: 'FREELANCE',
+  position: 'Laptop / PC Technician',
+);
+
+class Attribute {
+  final String name;
+  final String details;
+
+  Attribute({
+    this.name = '',
+    this.details = '',
+  });
+}
+
+final List<Attribute> attribute = [
+  _Attribute1,
+  _Attribute2,
+  _Attribute3,
+  _Attribute4,
+  _Attribute5,
+  _Attribute6,
+  _Attribute7,
+  _Attribute8,
+  _Attribute9,
+  _Attribute10,
+  _Attribute11,
+];
+
+final _Attribute1 = Attribute(
+  name: 'LOCATION',
+  details: 'LIVE IN CYBERJAYA, HAVE OWN TRANSPORT',
+);
+
+final _Attribute2 = Attribute(
+  name: 'WORKING TOOLS',
+  details: 'HAVE OWN MACBOOK AIR M1, FAST INTERNET AT HOME (IF WFH/REMOTE)',
+);
+
+final _Attribute3 = Attribute(
+  name: 'REAL WORKING EXPERIENCE',
+  details: 'WORKED AS COMPANY SECRETARY FOR OVER 2 YEARS',
+);
+
+final _Attribute4 = Attribute(
+  name: 'TRAITS',
+  details: 'FLEXIBLE & ADAPTABLE',
+);
+
+final _Attribute5 = Attribute(
+  name: 'TRAITS',
+  details: 'PROBLEM SOLVER',
+);
+
+final _Attribute6 = Attribute(
+  name: 'TRAITS',
+  details: 'COLLABORATIVE AND TEAM PERSON',
+);
+
+final _Attribute7 = Attribute(
+  name: 'TRAITS',
+  details: 'MULTITASKING ABILITIES',
+);
+
+final _Attribute8 = Attribute(
+  name: 'TRAITS',
+  details: 'EFFECTIVE COMMUNICATION',
+);
+
+final _Attribute9 = Attribute(
+  name: 'TRAITS',
+  details: 'SELF DISCIPLINE, ACCOUNTABILITY AND TIME MANAGEMENT',
+);
+
+final _Attribute10 = Attribute(
+  name: 'TRAITS',
+  details: 'CONSTANTLY LEARNING AND IMPROVING',
+);
+
+final _Attribute11 = Attribute(
+  name: 'TRAITS',
+  details: 'LOYAL AND STRIVE TO BECOME A GREAT ASSET TO THE COMPANY',
 );

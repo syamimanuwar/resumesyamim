@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume_syamim/screen/hire_me.dart';
 import 'custom_drawer.dart';
 import 'educational_history.dart';
 import 'hire_me.dart';
@@ -84,11 +85,11 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => LoginScreen(),
+                    builder: (context) => HireMe(),
                   ),
                 );
               },
-              child: Text('Login Page'),
+              child: Text('Why You Should Hire Me'),
               style: ElevatedButton.styleFrom(
                 fixedSize: Size(200, 50),
                 primary: Colors.white60,
@@ -103,11 +104,11 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HireMe(),
+                    builder: (context) => LoginScreen(),
                   ),
                 );
               },
-              child: Text('Why You Should Hire Me'),
+              child: Text('Login Page'),
               style: ElevatedButton.styleFrom(
                 fixedSize: Size(200, 50),
                 primary: Colors.white60,

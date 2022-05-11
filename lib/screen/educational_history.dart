@@ -19,18 +19,20 @@ class _EducationalHistoryState extends State<EducationalHistory> {
             borderRadius: BorderRadius.circular(15.0),
             border: Border.all(
               width: 1.0,
-              color: Colors.grey,
+              color: Colors.black,
             ),
           ),
           child: Row(
             children: <Widget>[
-              ClipRRect(
-                borderRadius: BorderRadius.circular(15.0),
-                child: Image(
-                  height: 150.0,
-                  width: 150.0,
-                  image: AssetImage(EducationalType.image),
-                  fit: BoxFit.fill,
+              Container(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(15.0),
+                  child: Image(
+                    height: 150.0,
+                    width: 150.0,
+                    image: AssetImage(EducationalType.image),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
               Flexible(
@@ -43,6 +45,10 @@ class _EducationalHistoryState extends State<EducationalHistory> {
                       children: <Widget>[
                         Text(
                           EducationalType.name,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15.0,
+                          ),
                         ),
                         SizedBox(
                             height: 10.0,
