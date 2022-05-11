@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tech_with_tim/screen/about_me.dart';
-import 'package:tech_with_tim/screen/educational_history.dart';
-import 'package:tech_with_tim/screen/hire_me.dart';
-import 'package:tech_with_tim/screen/main_screen.dart';
-import 'package:tech_with_tim/screen/work_experiences.dart';
-
+import 'about_me.dart';
+import 'educational_history.dart';
+import 'hire_me.dart';
+import 'home_screen.dart';
+import 'work_experiences.dart';
 import 'contact_me.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -84,7 +83,7 @@ class CustomDrawer extends StatelessWidget {
             'Home',
             () => Navigator.of(context).pushReplacement(
               MaterialPageRoute(
-                builder: (context) => MainScreen(),
+                builder: (context) => HomeScreen(),
               ),
             ),
           ),

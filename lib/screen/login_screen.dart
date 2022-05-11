@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:tech_with_tim/screen/main_screen.dart';
+import 'home_screen.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -156,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => MainScreen(),
+                  builder: (context) => HomeScreen(),
                 ),
               );
             } else {

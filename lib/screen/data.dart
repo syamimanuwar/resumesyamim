@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tech_with_tim/screen/work_screen.dart';
+import 'work_screen.dart';
 
 class EducationalType {
   final String image;

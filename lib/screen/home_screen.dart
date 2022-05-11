@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:tech_with_tim/screen/custom_drawer.dart';
-import 'package:tech_with_tim/screen/educational_history.dart';
-import 'package:tech_with_tim/screen/about_me.dart';
-import 'package:tech_with_tim/screen/hire_me.dart';
-import 'package:tech_with_tim/screen/work_experiences.dart';
-import 'package:tech_with_tim/screen/contact_me.dart';
-import 'package:tech_with_tim/screen/login_screen.dart';
+import 'custom_drawer.dart';
+import 'educational_history.dart';
+import 'about_me.dart';
+import 'hire_me.dart';
+import 'work_experiences.dart';
+import 'contact_me.dart';
+import 'login_screen.dart';
 
-class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

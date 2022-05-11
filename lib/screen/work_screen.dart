@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tech_with_tim/screen/data.dart';
+import 'data.dart';
 import 'data.dart';
 import 'custom_drawer.dart';
 
