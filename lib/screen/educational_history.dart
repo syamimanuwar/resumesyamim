@@ -99,13 +99,13 @@ class _EducationalHistoryState extends State<EducationalHistory> {
                               child: Divider(
                                 color: Colors.teal.shade400,
                               )),
-                        if (EducationalType.pmr.length != 0)
-                          Text(
-                            EducationalType.pmr,
-                          ),
                         if (EducationalType.spm.length != 0)
                           Text(
                             EducationalType.spm,
+                          ),
+                        if (EducationalType.pmr.length != 0)
+                          Text(
+                            EducationalType.pmr,
                           ),
                         if (EducationalType.upsr.length != 0)
                           Text(

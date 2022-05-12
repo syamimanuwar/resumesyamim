@@ -103,6 +103,7 @@ class Attribute {
 }
 
 final List<Attribute> attribute = [
+  _Attribute0,
   _Attribute1,
   _Attribute2,
   _Attribute3,
@@ -115,6 +116,11 @@ final List<Attribute> attribute = [
   _Attribute10,
   _Attribute11,
 ];
+
+final _Attribute0 = Attribute(
+  name: 'EAGER TO CODE',
+  details: 'SELF-TAUGHT PROGRAMMER WHO HAVE BASIC IN FLUTTER AND GIT',
+);
 
 final _Attribute1 = Attribute(
   name: 'LOCATION',

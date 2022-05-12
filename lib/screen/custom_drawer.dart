@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume_syamim/screen/login_screen.dart';
 import 'educational_history.dart';
 import 'hire_me.dart';
 import 'home_screen.dart';
@@ -119,6 +120,20 @@ class CustomDrawer extends StatelessWidget {
             () => Navigator.of(context).pushReplacement(
               MaterialPageRoute(
                 builder: (context) => HireMe(),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Align(
+              alignment: FractionalOffset.bottomCenter,
+            ),
+          ),
+          _buildDrawerOption(
+            Icon(Icons.directions_run),
+            'Logout',
+            () => Navigator.of(context).pushReplacement(
+              MaterialPageRoute(
+                builder: (context) => LoginScreen(),
               ),
             ),
           ),

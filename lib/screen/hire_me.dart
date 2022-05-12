@@ -22,7 +22,7 @@ class _HireMeState extends State<HireMe> {
           padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
           child: Container(
               decoration: BoxDecoration(
-                  color: Color(0xFf363f93),
+                  color: Color.fromRGBO(65, 170, 168, 1),
                   borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(80.0),
                   ),
@@ -73,7 +73,7 @@ class _HireMeState extends State<HireMe> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.teal,
         appBar: AppBar(
           title: Text('Hire Me'),
           backgroundColor: Colors.teal.shade600,
@@ -84,20 +84,19 @@ class _HireMeState extends State<HireMe> {
           Container(
             height: 100,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(50),
-              ),
-              color: Color(0xFF363f93),
-            ),
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(50),
+                ),
+                color: Color.fromRGBO(29, 84, 100, 1)),
             child: Stack(children: [
               Positioned(
                 top: 30,
                 left: 0,
                 child: Container(
                   height: 45,
-                  width: 300,
+                  width: 330,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Color.fromRGBO(65, 170, 168, 1),
                     borderRadius: BorderRadius.only(
                       topRight: Radius.circular(50),
                       bottomRight: Radius.circular(50),
@@ -109,11 +108,11 @@ class _HireMeState extends State<HireMe> {
                 top: 40,
                 left: 20,
                 child: Text(
-                  "Why you should hire me",
+                  "WHY YOU SHOULD HIRE ME",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF363f93),
+                    color: Colors.white,
                   ),
                 ),
               )
@@ -130,7 +129,7 @@ class _HireMeState extends State<HireMe> {
                     height: 130.0,
                     width: width * 0.9,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Color.fromRGBO(29, 84, 100, 1),
                       borderRadius: BorderRadius.circular(0.0),
                       boxShadow: [
                         BoxShadow(
@@ -175,6 +174,7 @@ class _HireMeState extends State<HireMe> {
                       Text(
                         'Syamim Anuwar',
                         style: TextStyle(
+                          color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
@@ -183,7 +183,7 @@ class _HireMeState extends State<HireMe> {
                         'Flutter Developer',
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.grey,
+                          color: Colors.white54,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

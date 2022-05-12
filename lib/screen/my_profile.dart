@@ -16,6 +16,11 @@ class _MyProfileState extends State<MyProfile> {
               title: Text('My Profile'),
               backgroundColor: Colors.teal.shade600,
               bottom: TabBar(
+                labelStyle: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w600,
+                ),
+                unselectedLabelStyle: TextStyle(fontSize: 15.0),
                 tabs: <Widget>[
                   Tab(text: 'Contact Me'),
                   Tab(text: 'About Me'),

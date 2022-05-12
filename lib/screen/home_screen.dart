@@ -16,109 +16,113 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.teal,
       appBar: AppBar(
         title: Text('Home'),
-        backgroundColor: Colors.teal.shade600,
+        backgroundColor: Color.fromRGBO(255, 128, 80, 1),
       ),
       drawer: CustomDrawer(),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MyProfile(),
-                  ),
-                );
-              },
-              child: Text('My Profile'),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(200, 50),
-                primary: Colors.white60,
-                shape: BeveledRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MyProfile(),
                 ),
+              );
+            },
+            child: Text(
+              'My Profile',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18.0,
               ),
             ),
-            SizedBox(height: 20.0),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => WorkExperiences(),
-                  ),
-                );
-              },
-              child: Text('Work Experiences'),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(200, 50),
-                primary: Colors.white60,
-                shape: BeveledRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
+            style: ElevatedButton.styleFrom(
+              fixedSize: Size(200, 50),
+              primary: Color.fromRGBO(255, 128, 80, 1),
+              shape: BeveledRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
               ),
             ),
-            SizedBox(height: 20.0),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => EducationalHistory(),
-                  ),
-                );
-              },
-              child: Text('Educational History'),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(200, 50),
-                primary: Colors.white60,
-                shape: BeveledRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+          ),
+          SizedBox(height: 30.0),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => WorkExperiences(),
                 ),
+              );
+            },
+            child: Text(
+              'Work Experiences',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18.0,
               ),
             ),
-            SizedBox(height: 20.0),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => HireMe(),
-                  ),
-                );
-              },
-              child: Text('Why You Should Hire Me'),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(200, 50),
-                primary: Colors.white60,
-                shape: BeveledRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
+            style: ElevatedButton.styleFrom(
+              fixedSize: Size(200, 50),
+              primary: Color.fromRGBO(255, 128, 80, 1),
+              shape: BeveledRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
               ),
             ),
-            SizedBox(height: 20.0),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => LoginScreen(),
-                  ),
-                );
-              },
-              child: Text('Login Page'),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(200, 50),
-                primary: Colors.white60,
-                shape: BeveledRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+          ),
+          SizedBox(height: 30.0),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => EducationalHistory(),
                 ),
+              );
+            },
+            child: Text(
+              'Educational History',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18.0,
               ),
             ),
-          ],
-        ),
+            style: ElevatedButton.styleFrom(
+              fixedSize: Size(200, 50),
+              primary: Color.fromRGBO(255, 128, 80, 1),
+              shape: BeveledRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          SizedBox(height: 30.0),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HireMe(),
+                ),
+              );
+            },
+            child: Text(
+              'Why You Should Hire Me',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18.0,
+              ),
+            ),
+            style: ElevatedButton.styleFrom(
+              fixedSize: Size(200, 50),
+              primary: Color.fromRGBO(255, 128, 80, 1),
+              shape: BeveledRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+        ]),
       ),
     );
   }
