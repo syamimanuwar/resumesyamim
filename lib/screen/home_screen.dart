@@ -5,7 +5,6 @@ import 'educational_history.dart';
 import 'hire_me.dart';
 import 'work_experiences.dart';
 import 'my_profile.dart';
-import 'login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
