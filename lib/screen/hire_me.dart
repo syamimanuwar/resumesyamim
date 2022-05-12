@@ -194,11 +194,13 @@ class _HireMeState extends State<HireMe> {
             ]),
           ),
           Expanded(
-            child: ListView(children: <Widget>[
-              Column(children: <Widget>[
-                _buildAttribute(),
-              ]),
-            ]),
+            child: ListView(
+              children: <Widget>[
+                Column(children: <Widget>[
+                  _buildAttribute(),
+                ]),
+              ],
+            ),
           ),
         ])));
   }

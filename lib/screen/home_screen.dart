@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.teal,
       appBar: AppBar(
         title: Text('Home'),
-        backgroundColor: Color.fromRGBO(255, 128, 80, 1),
+        backgroundColor: Colors.teal.shade600,
       ),
       drawer: CustomDrawer(),
       body: Center(
@@ -33,13 +33,14 @@ class HomeScreen extends StatelessWidget {
             child: Text(
               'My Profile',
               style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 18.0,
               ),
             ),
             style: ElevatedButton.styleFrom(
               fixedSize: Size(200, 50),
-              primary: Color.fromRGBO(255, 128, 80, 1),
+              primary: Colors.teal.shade300,
               shape: BeveledRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -58,13 +59,14 @@ class HomeScreen extends StatelessWidget {
             child: Text(
               'Work Experiences',
               style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 18.0,
               ),
             ),
             style: ElevatedButton.styleFrom(
               fixedSize: Size(200, 50),
-              primary: Color.fromRGBO(255, 128, 80, 1),
+              primary: Colors.teal.shade300,
               shape: BeveledRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -84,13 +86,14 @@ class HomeScreen extends StatelessWidget {
               'Educational History',
               textAlign: TextAlign.center,
               style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 18.0,
               ),
             ),
             style: ElevatedButton.styleFrom(
               fixedSize: Size(200, 50),
-              primary: Color.fromRGBO(255, 128, 80, 1),
+              primary: Colors.teal.shade300,
               shape: BeveledRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -110,13 +113,14 @@ class HomeScreen extends StatelessWidget {
               'Why You Should Hire Me',
               textAlign: TextAlign.center,
               style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 18.0,
               ),
             ),
             style: ElevatedButton.styleFrom(
               fixedSize: Size(200, 50),
-              primary: Color.fromRGBO(255, 128, 80, 1),
+              primary: Colors.teal.shade300,
               shape: BeveledRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),

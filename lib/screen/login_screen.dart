@@ -10,8 +10,8 @@ class LoginScreen extends StatefulWidget {
 
 final unameController = TextEditingController();
 final passController = TextEditingController();
-String uname = '';
-String pass = '';
+String uname = 'admin';
+String pass = 'admin';
 
 class _LoginScreenState extends State<LoginScreen> {
   bool isRememberMe = false;
@@ -161,8 +161,8 @@ class _LoginScreenState extends State<LoginScreen> {
               );
             } else {
               Fluttertoast.showToast(msg: "Invalid Username or Password");
-              unameController.text = "admin";
-              passController.text = "admin";
+              unameController.text = '';
+              passController.text = '';
             }
           },
           style: ElevatedButton.styleFrom(
