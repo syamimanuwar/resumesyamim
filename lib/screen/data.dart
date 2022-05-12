@@ -41,7 +41,7 @@ final _EducationalType2 = EducationalType(
   name: 'UITM DENGKIL',
   course: 'Foundation of Law',
   year: '2015 - 2016',
-  cgpa: '2.90',
+  cgpa: 'CGPA: 2.90',
   muet: 'MUET: Band 4',
 );
 
